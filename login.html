@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>social media</title>
+</head>
+<style>
+body {
+  background-image: url(https://img.freepik.com/free-photo/abstract-background-light-steel-blue-wallpaper-image_53876-102530.jpg);}
+h1 {color:black;}
+p {color:black;}
+h3 {color:black;}
+h4 {color:black;}
+</style>
+
+<center><body>
+
+<b><h1>Login</h1></b>
+<b><p>Username</b></p>
+<input type="text" id="abc"><br>
+<b><p>Password</b></p>
+<input type="password" id="efg"><br>
+<center><p><a href>Forgot password?</a></p></center><br>
+<center><button onclick="bb()"><h4>LOGIN<h4></button></center><br>
+<h4>Don't have an account?<a href="signup.html">Signup</a></h4><br>
+<a href="index.html">HOME PAGE</a>
+ <script>
+   function bb(){
+
+    alert(localStorage.getItem("username"));
+alert(localStorage.getItem("password")); 
+let username=document.getElementById("abc").value;                                   
+let password=document.getElementById("efg").value; 
+let uname =localStorage.getItem("username");
+let pass =localStorage.getItem("password");
+if(username ==uname&& password==pass)
+{alert("you are valid");
+window.location.href="homepage.html";
+
+}
+else{ alert("intruder");}
+}
+ </script>
+
+</body>
+
+</center>
+
+</html>
+
+
+
+

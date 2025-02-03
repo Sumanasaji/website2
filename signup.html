@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Sumana</title>
+</head>
+
+<style>
+body {
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20231229/pngtree-soft-watercolor-gradient-background-in-light-blue-and-gray-shades-image_13842009.png);}
+h1 {color:blue;}
+p {color:black;}
+h3 {color:blue;}
+    
+</style>
+<div style="text-align:center; border: 2px solid black">
+
+<center><body>
+
+<b><h1>Create an Account</h1></b>
+<h2>SignUp with your email address or phone number</h2><br>
+<u><h2><b>SIGN UP</h2></b></u>
+<b><p> username</b></p>
+<input type="email" id="username"><br>
+
+<b><p>Password</b></p>
+<input type="password" id="password"><br>
+<b><p>Confirm password</b></p>
+<input type="password"><br>
+
+<input type="radio" name="gender"
+value="male"> Male
+<input type="radio" name="gender"
+value="female">female<br>
+<center><button onclick="aa()"><h3>CREATE ACCOUNT<h3></button></center><br>
+<p>Already have an account?<button><a href="login.html">Login</a></button></p><br>
+<a href="index.html">HOME PAGE</a><br>
+
+
+
+
+<script>
+function aa()
+{
+let username=document.getElementById("username").value;
+let password=document.getElementById("password").value;
+localStorage.setItem("username",username);
+localStorage.setItem("password",password);
+window.location.href="login.html";                                  
+}
+</script>
+
+
+</body>
+
+</center>
+
+</html>
+
+
+
+
+
+
+
+
+
+
